@@ -2,7 +2,6 @@
 
 DEFAULT_PROCESS="./default_process.sh"
 
-
 start_process() {
     echo "Starting the process: $1"
     "$@" &
@@ -16,7 +15,7 @@ monitor_process() {
             echo "The process has crashed. Restarting..."
             start_process "$@"
         fi
-        sleep 1
+        sleep 10
     done
 }
 
@@ -27,4 +26,4 @@ else
     start_process "$@"
 fi
 
-monitor_process "$@"
+monitor_process "$@" 

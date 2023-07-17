@@ -2,14 +2,14 @@
 
 DEFAULT_PROCESS="./default_process.sh"
 
-# Function to start the process
+
 start_process() {
     echo "Starting the process: $1"
     "$@" &
     PID=$!
 }
 
-# Function to monitor and restart the process
+
 monitor_process() {
     while true; do
         if ! ps -p $PID > /dev/null; then

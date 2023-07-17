@@ -1,1 +1,7 @@
-Assignment one conquering mate
+Prb1 :
+
+1) Parsing the log file and identifying the status code 200, while parsing the count of status code is incremented which acts as 9th entry 
+
+2) like the maps in data structure hold key-value pair, here keys are different status codes with unique entires and then incrementing the value for each status code when its encountered
+
+
